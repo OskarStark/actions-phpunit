@@ -11,8 +11,8 @@ LABEL "maintainer"="James Brooks <james@alt-three.com>"
 
 COPY --from=composer:1.8.4 /usr/bin/composer /usr/local/bin/composer
 
-RUN composer global require phpunit/phpunit ^8.0 \
-    && composer global show | grep phpunit
+RUN composer require phpunit/phpunit ^8.0 \
+    && composer show | grep phpunit
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
