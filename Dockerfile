@@ -14,5 +14,5 @@ COPY --from=composer:1.8.4 /usr/bin/composer /usr/local/bin/composer
 RUN composer global require phpunit/phpunit ^8.0 \
     && composer global show | grep phpunit
 
-ADD entrypoint.sh / entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
