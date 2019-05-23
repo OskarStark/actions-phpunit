@@ -1,4 +1,4 @@
-FROM altthree/circle-php-cli-71:1.1.0
+FROM altthree/circle-php-cli-73:1.1.0
 
 LABEL "com.github.actions.name"="PHPUnit"
 LABEL "com.github.actions.description"="A GitHub Action for PHPUnit"
