@@ -1,6 +1,6 @@
 # A GitHub Action for PHPUnit
 
-## Usage
+## Usage
 
 Use within a GitHub Action:
 
