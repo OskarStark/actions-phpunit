@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/AltThree/actions-phpunit"
 LABEL "homepage"="http://github.com/AltThree/actions-phpunit"
 LABEL "maintainer"="James Brooks <james@alt-three.com>"
 
-COPY --from=composer:1.8.4 /usr/bin/composer /usr/local/bin/composer
+COPY --from=composer:1.9.0 /usr/bin/composer /usr/local/bin/composer
 
 RUN composer require phpunit/phpunit ^8.0 \
     && composer show | grep phpunit
